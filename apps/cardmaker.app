@@ -1,0 +1,1 @@
+../cardmaker/build/Release/cardmaker.app

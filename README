@@ -1,0 +1,11 @@
+./data -------           holds data files
+------/txt ---           holds article fulltext
+------/txt-abstracts --- holds article abstracts
+------/plist -           holds plists of top tf-idf terms, all tf-idf terms, and all word counts in the corpus
+------/xml ---           currently unused
+------/cards         --- holds generated cards
+
+APPS:
+articlegetter - specify and article and all the articles to which it links will be downloaded in the data directory. choose to download fulltext or abstracts only. can also download all articles that the linked articles link to.
+tfidfcalc - specify a directory and stopword, stemming and abstract/fulltext options, app will calculate tf-idf values for all the articles in the directory. results are written to /plist directory.
+cardmaker - specify a data directory and stopword, stemming, and abstract/fulltext options (for which tf-idf datasource to use). will load stored plist data and generate card for specified article title. results are written to /cards directory. In batch mode, generates cards for all links in the specified article and all results are placed in a single file.

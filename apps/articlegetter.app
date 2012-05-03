@@ -1,0 +1,1 @@
+../articlegetter/build/Release/articlegetter.app
